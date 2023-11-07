@@ -307,6 +307,8 @@ class Train():
         replace = 'labels = ["{}"]'.format('", "'.join(detector.labels))
         with open(self.result_labels_path, "w") as f:
             f.write(replace)
+            f.write('\r\nanchors = [{}]'.format(', '.join(str(i) for i in detector.anchors)))
+            f.write(f'\r\nanchors_len = {int(len(detector.anchors) / 2)}')
         with open(self.result_boot_py_path) as f:
             boot_py = f.read()
         with open(self.result_boot_py_path, "w") as f:
