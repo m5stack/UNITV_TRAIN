@@ -1,7 +1,7 @@
 train_scripts
 ===========
 
-You can also train on [Maixhub.com](https://www.maixhub.com), 
+You can also train on [v-training.m5stack.com](http://v-training.m5stack.com/), 
 just upload your datasets and you will get the result(kmodel and usage code)
 
 ## Train type
